@@ -7,9 +7,9 @@ import javax.swing.JPanel;
 
 public class ToolBar extends JPanel{
     
-    JButton prev;
-    JButton next;
-    JLabel label;
+    private JButton prev;
+    private JButton next;
+    private JLabel label;
 
     public ToolBar(){
         prev = new JButton("<");

@@ -23,8 +23,10 @@ public class ImageViewer {
         String path = "C:\\Users\\Public\\Pictures\\Sample Pictures";
         FileImageLoader listImages = new FileImageLoader(new File(path));
         Image image = listImages.load();
-        System.out.println("IMAGE: " + image);
-        MainFrame mainFrame = new MainFrame();	
+        
+        MainFrame mainFrame = new MainFrame();
+        
+        mainFrame.getImageDisplay().show(image);
     }
     
 }
